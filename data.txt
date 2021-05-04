@@ -1,0 +1,8 @@
+<h2>Quality education at your fingertips</h2>
+<p>This is demo text for display on this website please 
+please ignore. This text is just for aesthetic purposes and has no meaning
+in relation to the website. This is demo text for display on this website please <br>
+            please ignore. This text is just for aesthetic purposes and has no meaning <br>
+            in relation to the website. This is demo text for display on this website please <br> 
+            please ignore. This text is just for aesthetic purposes and has no meaning <br>
+            in relation to the website</p>
