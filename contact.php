@@ -29,7 +29,8 @@
         </div>
     </nav>
 
-    <form action="" method="POST">
+    <?php require_once 'process.php'; ?>
+    <form action="process.php" method="POST">
     <section class="contact">
         <div class = "form">
         <input type="text" name="name" placeholder="Enter full name">
