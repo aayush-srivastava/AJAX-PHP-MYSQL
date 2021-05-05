@@ -34,22 +34,16 @@
     <section class="contact">
         <div class = "form">
         <input type="text" name="name" placeholder="Enter full name">
-        <input type="text" name="name" placeholder="Enter email">
-        <input type="text" name="name" placeholder="Mobile">
-        <input type="text" name="name" placeholder="College name">
-        <input type="text" name="name" placeholder="Stream or Branch">
-        <input type="text" name="name" placeholder="Year of Graduation">
-        <input type="text" name="name" placeholder="Current Company">        
-        <button class="btn btn-dark text-centre" type="submit" name="save" id="button">Submit</button>
+        <input type="text" name="email" placeholder="Enter email">
+        <input type="text" name="mobile" placeholder="Mobile">
+        <input type="text" name="college" placeholder="College name">
+        <input type="text" name="stream" placeholder="Stream or Branch">
+        <input type="text" name="year" placeholder="Year of Graduation">
+        <input type="text" name="company" placeholder="Current Company">        
+        <button class="btn btn-dark text-centre" type="submit" name="save">Submit</button>
         </div>
     </section>
     </form>
-
-    <?php
-
-    $mysqli = new mysqli('localhost', 'root', '', 'student-info') or die(mysqli_error($mysqli))
-
-    ?>
 
 </body>
 </html>

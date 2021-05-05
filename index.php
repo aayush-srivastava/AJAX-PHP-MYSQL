@@ -113,7 +113,7 @@
     </script>
 
     <section class="contact">
-        <h2 class="text-centre">Contact Us</h2>
+        <h2 class="text-centre">Your Info</h2>
         <div id="error"></div>
         <form id="form" action="" method="post">
             <div class="form">
