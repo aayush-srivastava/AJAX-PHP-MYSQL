@@ -172,6 +172,12 @@
 
 .contact {
     background-color: rgb(198, 248, 248);
+    height: 500px;
+    padding-top: 20px;
+}
+
+.new-form {
+    background-color: rgb(198, 248, 248);
     height: 350px;
     padding-top: 20px;
 }

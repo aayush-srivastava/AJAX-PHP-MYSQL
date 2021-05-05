@@ -13,10 +13,10 @@
     <nav class="navbar h-nav">
         <ul class="nav-list v-class">
             <div class="logo"><img src="img/laptop.jpg" alt ="logo"></div>
-            <li><a href = "#home">Home</a></li>
+            <li><a href = "index.php">Home</a></li>
             <li><a href = "#about">About</a></li>
             <li><a href = "#services">Services</a></li>
-            <li><a href = "#contact">Contact</a></li>
+            <li><a href = "contact.php">Contact Us</a></li>
         </ul>
         <div class="rightNav v-class">
             <input type="text" name="search" id="search">
@@ -124,55 +124,8 @@
             </div>
     </section>
 
-    <script>
-        let names = [];
-        const addNames = (ev) =>{
-            ev.preventDefault();
-            let names = {
-                name: document.getElementById('name').value,
-                phone: document.getElementById('phone').value,
-                email: document.getElementById('email').value
-            }
-
-            names.push(names);
-            document.forms[0].reset();
-            document.querySelector('form').reset();
-
-            cosole.warn('added' , {names});
-            let pre = document.querySelector('#msg pre')
-            pre.textContent = "\n" + JSON.stringify(names, '\t', 2)
-
-            localStorage.setItem("form-data", JSON.stringify(names));
-        }
-        document.addEventListener('DOMContentLoader', () => {
-            document.getElementByID('button').addEventListener('')
-        })
-    </script>
-
-<?php    
+<?php        
     
-    if(isset($_POST['name'])){
-        $name=$_POST['name'];
-        $fp = fopen('form-data.txt', 'a');
-        fwrite($fp, "name: ");
-        fwrite($fp, $name ."\n");
-        fclose($fp);
-    }
-    if(isset($_POST['phone'])){
-        $phone=$_POST['phone'];
-        $fp = fopen('form-data.txt', 'a');
-        fwrite($fp, "phone: ");
-        fwrite($fp, $phone ."\n");
-        fclose($fp);
-    }
-    if(isset($_POST['email'])){
-        $email=$_POST['email'];
-        $fp = fopen('form-data.txt', 'a');
-        fwrite($fp, "email: ");
-        fwrite($fp, $email ."\n");
-        fclose($fp); 
-    }
-
 ?>
 
 </body>
