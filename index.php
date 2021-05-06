@@ -16,7 +16,7 @@
             <li><a href = "index.php">Home</a></li>
             <li><a href = "#about">About</a></li>
             <li><a href = "#services">Services</a></li>
-            <li><a href = "contact.php">Contact Us</a></li>
+            <li><a href = "contact.php">Students</a></li>
         </ul>
         <div class="rightNav v-class">
             <input type="text" name="search" id="search">
