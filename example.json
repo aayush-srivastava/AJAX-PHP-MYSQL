@@ -1,0 +1,7 @@
+[
+    { "COURSE": "COMPUTER SCIENCE", "LoC": "Second", "BATCHSIZE": "120", "SET": "120+" },
+    { "COURSE": "INFORMATION TECHNOLOGY", "LoC": "Second", "BATCHSIZE": "60", "SET": "100+" },
+    { "COURSE": "ELECTRONICS", "LoC": "Third", "BATCHSIZE": "120", "SET": "80+" },
+    { "COURSE": "MECHANICAL", "LoC": "Ground", "BATCHSIZE": "140", "SET": "70+" },
+    { "COURSE": " ", "LoC": "TOTAL:", "BATCHSIZE": "400", "SET": " " }
+]

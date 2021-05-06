@@ -12,10 +12,10 @@
 <body>
     <nav class="navbar h-nav">
         <ul class="nav-list v-class">
-            <div class="logo"><img src="img/laptop.jpg" alt ="logo"></div>
+            <div class="logo"><a href="index.php"><img src="img/laptop.jpg" alt ="logo"></a></div>
             <li><a href = "index.php">Home</a></li>
-            <li><a href = "#about">About</a></li>
-            <li><a href = "#services">Services</a></li>
+            <li><a href = "#contactUs">About</a></li>
+            <li><a href = "courses.php">Courses</a></li>
             <li><a href = "contact.php">Students</a></li>
         </ul>
         <div class="rightNav v-class">
@@ -28,6 +28,8 @@
             <div class="line"></div>
         </div>
     </nav>
+
+
     <section class="background firstSection">
         <div class="box-main">
             <div class="firstHalf">
@@ -93,40 +95,18 @@
         </div>
     </section>
 
-    <section class="secLeft">
-        <div id="data">
-        <button type="btn btn-dark text-centre" onclick="loadDoc()">Show more info</button>
-    </div></section>
 
-    <script>
-        function loadDoc() {
-        var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            document.getElementById("data").innerHTML =
-            this.responseText;
-        }
-    };
-    xhttp.open("GET", "data.txt", true);
-    xhttp.send();
-    }
-    </script>
-
-    <section class="contact">
-        <h2 class="text-centre">Your Info</h2>
+    <section class="contact" id="contactUs">
+        <h2 class="text-centre">Contact Us</h2>
         <div id="error"></div>
         <form id="form" action="" method="post">
             <div class="form">
                 <input type="text" name="name" id="name" placeholder="Enter your name" required>
                 <input type="text" name="phone" id="phone" placeholder="Enter your phone" required>
                 <input type="email" name="email" id="email" placeholder="Enter your email" required>
-                <button class="btn btn-dark text-centre" type="submit" onClick="save()" id="button">Submit</button>
+                <button class="btn btn-dark text-centre" type="submit" onClick="save()">Submit</button>
             </div>
     </section>
-
-<?php        
-    
-?>
 
 </body>
 </html>

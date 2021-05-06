@@ -3,7 +3,7 @@
 session_start();
 
     $mysqli = new mysqli('localhost', 'root', '', 'student-info') or die(mysqli_error($mysqli));
-    $name = '';
+    $names = '';
     $email = '';
     $mobile = '';
     $college = '';
@@ -16,7 +16,7 @@ session_start();
     
     //saving new entry when save button clicked
     if (isset($_POST['save'])){
-        $name = $_POST['names'];
+        $names = $_POST['names'];
         $email = $_POST['email'];
         $mobile = $_POST['mobile'];
         $college = $_POST['college'];
@@ -24,7 +24,7 @@ session_start();
         $year = $_POST['year'];
         $company = $_POST['company'];
 
-        $mysqli->query("INSERT INTO contact (names,email,mobile,college,stream,graduation,company) VALUES ('$name','$email','$mobile','$college','$stream','$year','$company')") or
+        $mysqli->query("INSERT INTO contact (names,email,mobile,college,stream,graduation,company) VALUES ('$names','$email','$mobile','$college','$stream','$year','$company')") or
             die($mysqli->error);
 
         header("location: contact.php");
@@ -44,7 +44,7 @@ session_start();
         $result = $mysqli->query("SELECT * FROM contact WHERE id=$id") or die($mysqli_error());
         
         $row = $result->fetch_array();
-        $name = $row['names'];
+        $names = $row['names'];
         $email = $row['email'];
         $mobile = $row['mobile'];
         $college = $row['college'];
@@ -55,7 +55,7 @@ session_start();
 
     if(isset($_POST['update'])){
         $id = $_POST['id'];
-        $name = $_POST['names'];
+        $names = $_POST['names'];
         $email = $_POST['email'];
         $mobile = $_POST['mobile'];
         $college = $_POST['college'];
@@ -63,7 +63,7 @@ session_start();
         $year = $_POST['year'];
         $company = $_POST['company'];
 
-        $mysqli->query("UPDATE contact SET names='$name', email='$email', mobile='$mobile',college='$college',stream='$stream',graduation='$year',company='$company' WHERE id =$id") or die($mysqli->error);
+        $mysqli->query("UPDATE contact SET names='$names', email='$email', mobile='$mobile',college='$college',stream='$stream',graduation='$year',company='$company' WHERE id =$id") or die($mysqli->error);
 
             header("location: contact.php");
     }

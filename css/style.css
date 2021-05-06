@@ -6,6 +6,7 @@
 
 .logo {
     width: 20%;
+    margin-left: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -152,6 +153,11 @@
     margin-left: 125px;
 }
 
+.scroll {
+    height: 1000px;
+    background-color: lightgreen;
+}
+
 .secRight {
     height: 500px;
     display: flex;
@@ -165,6 +171,18 @@
 
 .secLeft {
     height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 100%;
+    margin: auto;
+    flex-direction: row-reverse;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: azure;
+}
+
+.address {
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -190,7 +208,7 @@
 
 .contact {
     background-color: rgb(198, 248, 248);
-    height: 500px;
+    height: 250px;
     padding-top: 20px;
 }
 

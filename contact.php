@@ -12,10 +12,10 @@
 <body class="table-back">
     <nav class="navbar h-nav">
         <ul class="nav-list v-class">
-            <div class="logo"><img src="img/laptop.jpg" alt ="logo"></div>
+            <div class="logo"><a href="index.php"><img src="img/laptop.jpg" alt ="logo"></a></div>
             <li><a href = "index.php">Home</a></li>
             <li><a href = "#about">About</a></li>
-            <li><a href = "#services">Services</a></li>
+            <li><a href = "courses.php">Courses</a></li>
             <li><a href = "contact.php">Students</a></li>
         </ul>
         <div class="rightNav v-class">
@@ -34,7 +34,6 @@
     <?php
         $mysqli = new mysqli('localhost', 'root', '', 'student-info') or die(mysqli_error($mysqli));
         $result = $mysqli->query("SELECT * FROM CONTACT") or die($mysqli->error);
-        //pre_r($result);
     ?>
         
     <div class="table-back">
@@ -88,7 +87,7 @@
 
     <section class="table-back">
         <div class = "form">
-        <input type="text" name="name" value="<?php echo $name; ?>" placeholder="Enter full name">
+        <input type="text" name="names" value="<?php echo $names; ?>" placeholder="Enter full name">
         <input type="text" name="email" value="<?php echo $email; ?>" placeholder="Enter email">
         <input type="text" name="mobile" value="<?php echo $mobile; ?>" placeholder="Mobile">
         <input type="text" name="college" value="<?php echo $college; ?>" placeholder="College name">
